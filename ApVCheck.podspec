@@ -39,12 +39,7 @@ A version check api for App has submited to appstore. have fun!
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license = {
-  :type => 'Copyright',
-  :text => <<-LICENSE
-  Copyright © 2019 邓伟浩. All rights reserved.
-  LICENSE
-  }
+  spec.license      = { :type => "MIT", :file => "License.md" }
   # spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
@@ -141,6 +136,9 @@ A version check api for App has submited to appstore. have fun!
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency 'HandyJSON', '~> 5.0.0-beta1'
+  spec.dependency 'Moya/RxSwift','~> 11.0.1'
+  spec.dependency 'RxCocoa'
+  spec.dependency 'YYKit'
 
 end
