@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ApVCheck"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A version check api for App has submited to appstore."
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ A version check api for App has submited to appstore. have fun!
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "MIT", :file => "License.md" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
