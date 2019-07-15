@@ -152,7 +152,11 @@ class AppIDSearchController: UIViewController {
     }
     
     @objc func toAppStoreUpdate() {
-        UIApplication.shared.open(URL(string: self.resultModel!.trackViewUrl)!, options: [:], completionHandler: nil)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: self.resultModel!.trackViewUrl)!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(URL(string: self.resultModel!.trackViewUrl)!)
+        }
     }
     
     @objc func toDownLoad() {
