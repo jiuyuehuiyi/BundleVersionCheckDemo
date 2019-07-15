@@ -18,6 +18,7 @@
 		2627B9FC22D883B800BC7335 /* AppIDSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B9FB22D883B800BC7335 /* AppIDSearchController.swift */; };
 		2627B9FE22D8881A00BC7335 /* AppNameSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B9FD22D8881A00BC7335 /* AppNameSearchController.swift */; };
 		2632C32822DC7038004FC32C /* ApVCheck.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2632C32722DC7038004FC32C /* ApVCheck.podspec */; };
+		2632C32A22DC8544004FC32C /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 2632C32922DC8544004FC32C /* License.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2627B9FB22D883B800BC7335 /* AppIDSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIDSearchController.swift; sourceTree = "<group>"; };
 		2627B9FD22D8881A00BC7335 /* AppNameSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNameSearchController.swift; sourceTree = "<group>"; };
 		2632C32722DC7038004FC32C /* ApVCheck.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ApVCheck.podspec; sourceTree = "<group>"; };
+		2632C32922DC8544004FC32C /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
 		81CA563D388801BCD02A3CE6 /* Pods_BundleVersionCheckDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BundleVersionCheckDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EE7CC62F0CF7CA3CCC1A41 /* Pods-BundleVersionCheckDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundleVersionCheckDemo.release.xcconfig"; path = "Target Support Files/Pods-BundleVersionCheckDemo/Pods-BundleVersionCheckDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AAEF4281E90BC7E6A783974B /* Pods-BundleVersionCheckDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundleVersionCheckDemo.debug.xcconfig"; path = "Target Support Files/Pods-BundleVersionCheckDemo/Pods-BundleVersionCheckDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		2627B9D522D8293C00BC7335 = {
 			isa = PBXGroup;
 			children = (
+				2632C32922DC8544004FC32C /* License.md */,
 				2632C32722DC7038004FC32C /* ApVCheck.podspec */,
 				2627B9E022D8293C00BC7335 /* BundleVersionCheckDemo */,
 				2627B9DF22D8293C00BC7335 /* Products */,
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2632C32A22DC8544004FC32C /* License.md in Resources */,
 				2632C32822DC7038004FC32C /* ApVCheck.podspec in Resources */,
 				2627B9EC22D8293D00BC7335 /* LaunchScreen.storyboard in Resources */,
 				2627B9E922D8293D00BC7335 /* Assets.xcassets in Resources */,
