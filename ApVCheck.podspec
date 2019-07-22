@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ApVCheck"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A version check api for App has submited to appstore."
 
   # This description is used to generate tags and improve search results.
@@ -137,7 +137,7 @@ A version check api for App has submited to appstore. have fun!
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'HandyJSON', '~> 5.0.0-beta1'
-  spec.dependency 'Moya/RxSwift','~> 11.0.1'
+  spec.dependency 'Moya/RxSwift','~> 13.0'
   spec.dependency 'RxCocoa'
   spec.dependency 'YYKit'
 

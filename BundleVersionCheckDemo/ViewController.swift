@@ -12,8 +12,8 @@ import UIKit
 
 let SearchAppId         =       "Search base on AppID"
 let SearchAppName       =       "Search base on AppName"
-var kAPP_ID             =       "1446453695"
-var kAPP_Name           =       "彬峰快运"
+var kAPP_ID             =       "1470917372"
+var kAPP_Name           =       "送油卡"
 
 
 class ViewController: UIViewController {

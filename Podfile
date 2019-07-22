@@ -9,7 +9,7 @@ target 'BundleVersionCheckDemo' do
   # Pods for BundleVersionCheckDemo
 
   pod 'HandyJSON', '~> 5.0.0-beta1'
-  pod 'Moya/RxSwift','~> 11.0.1'
+  pod 'Moya/RxSwift','~> 13.0'
   pod 'RxCocoa'
   
   pod 'YYKit'
