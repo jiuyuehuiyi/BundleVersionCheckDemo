@@ -9,55 +9,59 @@
 
 import HandyJSON
 
-struct WHBundleModel: HandyJSON {
+public struct WHBundleModel: HandyJSON {
     
-    var resultCount: Int = 0
-    var results: [WHBundleResultsModel]?
+    public var resultCount: Int = 0
+    public var results: [WHBundleResultsModel]?
+    
+    public init() {}
 }
 
-struct WHBundleResultsModel: HandyJSON {
-    var primaryGenreName: String = "" // 应用类别
-    var artworkUrl100: String = "" // 应用图标 100X100
-    var sellerUrl: String = "" // 开发者支持网站
-    var currency: String = "" // CNY
-    var artworkUrl512: String = "" // 应用图标 512X512
-    var ipadScreenshotUrls: [String] = [String]()
-    var fileSizeBytes: UInt64 = 0
-    var genres: [String] = [String]()
-    var languageCodesISO2A: [String] = [String]()
-    var artworkUrl60: String = "" // 应用图标 60X60
-    var supportedDevices: [String] = [String]()
-    var trackViewUrl: String = "" // 应用程序介绍网址
-    var description: String = ""
-    var version: String = "" // 版本信息
-    var bundleId: String = ""
-    var artistViewUrl: String = ""
-    var releaseDate: String = ""
-    var isGameCenterEnabled: Bool = false
-    var appletvScreenshotUrls: [String] = [String]()
-    var genreIds: [String] = [String]()
-    var wrapperType: String = ""
-    var trackId: String = "" // 应用程序 ID
-    var minimumOsVersion: String = ""
-    var formattedPrice: String = ""
-    var primaryGenreId: String = ""
-    var currentVersionReleaseDate: String = ""
-    var artistId: String = "" // 开发者 ID
-    var trackContentRating: String = "" // 评级
-    var artistName: String = "" // 开发者名称
-    var price: Double = 0
-    var trackCensoredName: String = "" // 审查名称
-    var trackName: String = "" // 应用程序名称
-    var kind: String = ""
-    var features: [String] = [String]()
-    var contentAdvisoryRating: String = ""
-    var screenshotUrls: [String] = [String]()
-    var releaseNotes: String = ""
-    var isVppDeviceBasedLicensingEnabled: String = ""
-    var sellerName: String = ""
-    var advisories: [String] = [String]()
+public struct WHBundleResultsModel: HandyJSON {
+    public init() {}
     
-    mutating func mapping(mapper: HelpingMapper) {
+    public var primaryGenreName: String = "" // 应用类别
+    public var artworkUrl100: String = "" // 应用图标 100X100
+    public var sellerUrl: String = "" // 开发者支持网站
+    public var currency: String = "" // CNY
+    public var artworkUrl512: String = "" // 应用图标 512X512
+    public var ipadScreenshotUrls: [String] = [String]()
+    public var fileSizeBytes: UInt64 = 0
+    public var genres: [String] = [String]()
+    public var languageCodesISO2A: [String] = [String]()
+    public var artworkUrl60: String = "" // 应用图标 60X60
+    public var supportedDevices: [String] = [String]()
+    public var trackViewUrl: String = "" // 应用程序介绍网址
+    public var description: String = ""
+    public var version: String = "" // 版本信息
+    public var bundleId: String = ""
+    public var artistViewUrl: String = ""
+    public var releaseDate: String = ""
+    public var isGameCenterEnabled: Bool = false
+    public var appletvScreenshotUrls: [String] = [String]()
+    public var genreIds: [String] = [String]()
+    public var wrapperType: String = ""
+    public var trackId: String = "" // 应用程序 ID
+    public var minimumOsVersion: String = ""
+    public var formattedPrice: String = ""
+    public var primaryGenreId: String = ""
+    public var currentVersionReleaseDate: String = ""
+    public var artistId: String = "" // 开发者 ID
+    public var trackContentRating: String = "" // 评级
+    public var artistName: String = "" // 开发者名称
+    public var price: Double = 0
+    public var trackCensoredName: String = "" // 审查名称
+    public var trackName: String = "" // 应用程序名称
+    public var kind: String = ""
+    public var features: [String] = [String]()
+    public var contentAdvisoryRating: String = ""
+    public var screenshotUrls: [String] = [String]()
+    public var releaseNotes: String = ""
+    public var isVppDeviceBasedLicensingEnabled: String = ""
+    public var sellerName: String = ""
+    public var advisories: [String] = [String]()
+    
+    public mutating func mapping(mapper: HelpingMapper) {
         mapper <<<
             releaseDate <-- TZTimeStringTransform(originFormatterString: "yyyy-MM-dd'T'HH:mm:ssZ", formatString: "yyyy-MM-dd HH:mm:ss")
         mapper <<<

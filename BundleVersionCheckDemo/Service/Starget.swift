@@ -16,33 +16,33 @@ let SearchApp_API             = "search"
 
 
 
-enum Starget {
+public enum Starget {
     
     case bundleVersionCheck(id: String)
     case searchApp(term: String)
 }
 
 extension Starget: TargetType {
-    var baseURL: URL {
+    public var baseURL: URL {
         return URL(string: ITUNESURL)!
     }
     
-    var path: String {
+    public var path: String {
         switch self {
         case .bundleVersionCheck:       return VersionCheck_API
         case .searchApp:                return SearchApp_API
         }
     }
     
-    var method: Moya.Method {
+    public var method: Moya.Method {
         return .post
     }
     
-    var sampleData: Data {
-    return Data()
+    public var sampleData: Data {
+        return Data()
     }
     
-    var task: Task {
+    public var task: Task {
         switch self {
         /// 无参请求
         case .bundleVersionCheck(let id):
@@ -52,7 +52,7 @@ extension Starget: TargetType {
         }
     }
     
-    var headers: [String : String]? {
+    public var headers: [String : String]? {
         return nil
     }
     
@@ -61,7 +61,7 @@ extension Starget: TargetType {
         
         return param.queryTask
     }
-
+    
 }
 
 fileprivate extension Dictionary {

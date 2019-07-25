@@ -33,7 +33,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-class Service: Any {
+open class Service: Any {
     
     static let provider = MoyaProvider<Starget>(requestClosure: { (endpoint, done) in
         var request: URLRequest = try! endpoint.urlRequest()
@@ -50,7 +50,7 @@ class Service: Any {
     ///   - model:  模型
     ///   - success: 成功回调
     ///   - failure: 失败回调
-    static func request<T: HandyJSON>(target: Starget, model:T.Type, success: @escaping ((T)-> Void), failure: (()-> Void)? ) {
+    public static func request<T: HandyJSON>(target: Starget, model:T.Type, success: @escaping ((T)-> Void), failure: (()-> Void)? ) {
         provider.request(target) { (result) in
             switch result {
             case .success(let value):
